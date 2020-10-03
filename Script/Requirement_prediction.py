@@ -16,8 +16,9 @@ with open(wd + "./data/", "r") as infile:
     for line in reader:
         (UserID, JobTitle, Requirements, City, State, 
         Country,Education,Skills) = line
-        job_info[str(Userid)] = [int(JobTitle), State, City, 0]
-
+        job_info[str(Userid)] = [int(JobTitle), State, City, 0] #input : {users ID,Location , Keywords , Education ,JobTitle(if present ) ,other mentioned details if present 
+#Change the input parameters names as per your requirement 
+#You can remove or add any data input in the above mentioned format
 print "Counting applications..."
 with open(wd + "./data/..") as infile:
     reader = csv.reader(infile, delimiter="\t")
